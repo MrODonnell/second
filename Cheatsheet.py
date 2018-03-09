@@ -1,3 +1,4 @@
+
 print("Addition")
 Addition = 9
 print("4 + 5 =")
@@ -60,4 +61,21 @@ elif boolean >= 1 :
     print("greater than or equal to 1")
 elif boolean <= 1 :
     print("less than or equal to 1")
+
+# split()
+
+# any string can be "split" on any character, or characters
+# the result is a list (sometimes called an array)
+# you may not realize it now, but this can be very handy
+someValues = "Laconia Gilford Belmont"
+listOfValues = someValues.split()
+print(listOfValues[1])
+#here is a more complex example
+keyValuePairs = "Bill: Laconia, Jane: Gilford, Tom: Belmont"
+listOfPairs = keyValuePairs.split(", ")
+count = 0
+while count < len(listOfPairs):
+    fname, town = listOfPairs[count].split(": ")
+    print("first name is: " + fname + "\n town is: " + town)
+    count += 1
     
